@@ -8,6 +8,7 @@ RUN  apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y jq \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
+  && apt-get install -y procps smbclient && rm -rf /var/lib/apt/lists/*
 
 # Change the root folder for Nextcloud to the /share directory to be persistent
 RUN  sed -i "s|/var/www|/share/nextcloud|g" /etc/apache2/sites-enabled/000-default.conf \
