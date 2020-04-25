@@ -1,6 +1,6 @@
 
 {
-    "name": "mtthp addons repository",
-    "url": "https://github.com/mtthp/hassio-addons",
+    "name": "mtthp addons repository(jacques FORK)",
+    "url": "https://github.com/jacques24681/hassio-addons",
     "maintainer": "Matthieu Petit <p.matthieu@me.com>"
 }
