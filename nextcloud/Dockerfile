@@ -1,7 +1,7 @@
 ARG BUILD_FROM=arm32v7/nextcloud:16.0.3
 FROM ${BUILD_FROM}
 
-# Copy root filesystem
+# Copy root  filesystem
 COPY rootfs /
 
 RUN  apt-get update \
